@@ -14,7 +14,7 @@ function sendMessage() {
   sendButton.disabled = true;
   sendButton.textContent = "Sending...";
 
-  fetch("https://exc-backend.vercel.app/api/gemini", {
+  fetch("https://exc-backend.satyamdwivedi.com.np/api/gemini", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
