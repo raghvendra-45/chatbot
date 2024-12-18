@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot</title>
+  <title>Chat Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">Chatbot</h1>
-
-    <div class="chatbox">
-      <div id="chat-output" class="chat-output"></div>
-    </div>
-
-    <div class="input-box">
-      <input type="text" id="userInput" class="input-field" placeholder="Type your message...">
-      <button onclick="sendMessage()" class="send-btn">Send</button>
-    </div>
+  <div class="chat-container">
+    <header class="header">
+      <h1>Chat Assistant</h1>
+    </header>
+    <main class="main">
+      <div id="chat-output" class="chat-display"></div>
+    </main>
+    <footer class="footer">
+      <input type="text" id="userInput" placeholder="Ask me anything..." class="chat-input">
+      <button class="chat-send" onclick="sendMessage()">➤</button>
+    </footer>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
